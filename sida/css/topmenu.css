@@ -1,15 +1,16 @@
 /* ekki stíla input heldur klasa */
-.   menuinput {
-     display: none;
+.menuinput {
+    display: none;
 }
 .menubutton,
 .topmenu {
-    border: 1px solid #818181;
+    border: 1px solid #ffffff;
     border-radius: 6px;
+    
 }
-label
+
 .menubutton {
-    color: #0087cc;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
     font-size: 18px;
@@ -17,45 +18,47 @@ label
         ransition: all .25s ease;
 }
 .menubutton:hover {
-            color: #09ff00;
+            color: #54a2d6;
 }
 .menuinput:checked + .menubutton {
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.35);
-    color: #9799a7;
+    color: #54a2d6;
+}
+label:hover {
+    color: #ff7b29;
 }
 .topnav {
-    /*max-height: 0;
-    overflow: hidden; - transition height víbrar í símum,*/
+    max-height: 0;
+    overflow: hidden; /*- transition height víbrar í símum,*/
     position: fixed; /* ath - sticky */
     left: -20em;
     top: 3em;
     z-index: 100;
-    transition: all .5s ease;
 }
 .menuinput:checked ~ .topnav {
-    /*max-height: 500px;*/
+    max-height: 500px;
     left: 1em
 }
 .topmenu {
     list-style: none;
-    margin: 8px 0 0 0;
+    margin: 0 0 0 0;
     padding: 0;
-    width: 130px;
-    background-color: rgb(255, 251, 240);
+    width: 100px;
+    background-color: rgb(255, 255, 255);
 }
 .topmenu li {
-    border-bottom: 1px solid #cecfd5;
+    border-bottom: 1px solid #adadad;
 }
 .topmenu li:last-child {
     border-bottom: 0;
 }
 .topmenu a {
-    color: #0087cc;
+    color: #000000;
     display: block;
     padding: 6px 12px;
     text-decoration: none;
 }
-    topmenu a:hover {
+a:hover {
     color: #ff7b29;
 }
 .topnav{
@@ -66,13 +69,20 @@ input{
     display: none;
 }
 
-.topnav{
-    display: none;
-}
-
-input:checked ~ nav{
+input:checked ~ .topnav{
     display: block;
 }
 
 input[type="checkbox"]{
   display: none; }
+
+@media screen and (min-width: 600px){
+
+    .menubutton{
+        display: none;
+    }
+    .topnav{
+        max-height: 500px;
+    }
+}
+      
