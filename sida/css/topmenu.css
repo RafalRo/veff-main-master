@@ -15,14 +15,14 @@
     display: inline-block;
     font-size: 18px;
     padding: 5px 9px;
-        ransition: all .25s ease;
+    transition: all .25s ease;
 }
 .menubutton:hover {
-            color: #54a2d6;
+            color: #ff7b29;
 }
 .menuinput:checked + .menubutton {
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.35);
-    color: #54a2d6;
+    color: #ff7b29;
 }
 label:hover {
     color: #ff7b29;
@@ -82,7 +82,31 @@ input[type="checkbox"]{
         display: none;
     }
     .topnav{
-        max-height: 500px;
+        max-height: 600px;
+        top: 0px;
+        left: 0px;
+        overflow: visible;
+        position: static;
+        margin: 0;
+    }
+    .topmenu{
+        width: auto;
+        background-color: rgb(53, 53, 53);
+        border-radius: 0em;
+        border: 0em;
+        font-size: bold;
+        place-content: center;
+    }
+    .topmenu li{
+        border-bottom: 0em;
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul{
+        display: flex;
+        flex-flow: row;
     }
 }
       
