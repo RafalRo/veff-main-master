@@ -1,3 +1,38 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --grey: rgb(59,59,59); 
+  --error: #f00;
+  --msg: " Hér eru skilaboð sem birtast! ";
+  --bg-img: rgb(59,59,59);
+}
+
+body {
+  background-image: var(--bg-img);
+}
+
+h2 {
+  border-bottom: 2px solid var(--white);
+}
+
+.container {
+  color: var(--white);
+  background-color: var(--grey);
+  padding: 15px;
+}
+
+button {
+  background-color: var(--grey);
+  color: var(--white);
+  border: 1px solid var(--white);
+  padding: 5px;
+}
+.skilabod {
+    color: var(--error);
+}
+.skilabod::after {
+    content: var(--msg);
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('fonts/icomoon.eot?qbkio8');
